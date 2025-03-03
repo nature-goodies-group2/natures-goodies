@@ -1,14 +1,15 @@
 
-import './index.css'
+import { NavBar } from './components/NavBar';
 
-const App = ()=> {
- 
 
+
+
+const App = () => {
   return (
     <>
-      <h1>TESTING</h1>
+     <NavBar />   
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
