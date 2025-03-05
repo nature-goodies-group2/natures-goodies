@@ -3,8 +3,6 @@ import { NavBar } from '../components/NavBar';
 import { Footer } from '../components/Footer';
 import '../css/home.css';
 import homepage from '../img/homepage.png';
-import Login from './Login.jsx';
-import Register from './Register.jsx';
 export default function Home() { // Changed "home" to "Home"
   return (
     <div>
@@ -12,11 +10,6 @@ export default function Home() { // Changed "home" to "Home"
         <NavBar />
       </header>
       <main>
-        <div>
-          <Login />
-          <h3>New here?</h3>
-          <Register />
-        </div>
         <div >
           <center><img src={homepage} alt="Our products" /></center>
         </div>

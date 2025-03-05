@@ -20,6 +20,10 @@ export const NavBar = () => {
           <li><Link to="/aboutus">About Us</Link></li>
 
           <li><Link to="/contactus">Contact Us</Link></li>
+
+          <li><Link to="/Login">Login</Link></li>
+
+          <li><Link to="/Register">Register</Link></li>
         </ul>
       </nav>
     </header>
