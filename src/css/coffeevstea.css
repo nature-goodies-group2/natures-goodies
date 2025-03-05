@@ -1,0 +1,26 @@
+.coffee-vs-tea-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.coffee-vs-tea-content {
+  flex-grow: 1;
+  padding: 40px;
+  text-align: center;
+  background-color: #f1f8e9; /* Light green tea-like background */
+}
+
+.coffee-vs-tea-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #6b4f2d; /* Rich brown for coffee theme */
+}
+
+.coffee-vs-tea-description {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
