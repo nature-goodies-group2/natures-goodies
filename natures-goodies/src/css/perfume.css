@@ -1,0 +1,26 @@
+.perfume-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.perfume-content {
+  flex-grow: 1;
+  padding: 40px;
+  text-align: center;
+  background-color: #60ccec; /* Light beige background for a luxurious feel */
+}
+
+.perfume-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: blue; /* Rich brown color for an elegant look */
+}
+
+.perfume-description {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}

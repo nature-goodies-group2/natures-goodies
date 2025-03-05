@@ -1,18 +1,11 @@
-
-import { NavBar } from './components/NavBar';
-import { Body } from './components/Body';
-import { Footer } from './components/Footer';
-
-
-
+import './css/app.css';
+import RouterLink  from './components/routers/RoutersLink';
 
 const App = () => {
   return (
-    <>
-     <NavBar /> 
-     <Body />
-     <Footer/>
-    </>
+   <main>
+    <RouterLink />
+   </main>
   );
 };
 

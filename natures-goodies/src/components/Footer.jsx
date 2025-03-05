@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>&copy; CopyRight | Nature's Goodies. All rights reserved.</p>
+        <p>&copy; CopyRight | Nature's Goodies | All rights reserved.</p>
         <ul className="footer-links">
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms of Service</a></li>

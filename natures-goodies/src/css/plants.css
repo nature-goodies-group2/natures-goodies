@@ -1,0 +1,26 @@
+.plants-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.plants-content {
+  flex-grow: 1;
+  padding: 40px;
+  text-align: center;
+  background-color: #e8f5e9; /* Light green background for a natural look */
+}
+
+.plants-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #388e3c; /* Green color for plant theme */
+}
+
+.plants-description {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
