@@ -3,7 +3,6 @@ import { NavBar } from '../components/NavBar';
 import { Footer } from '../components/Footer';
 import '../css/home.css';
 import homepage from '../img/homepage.png';
-
 export default function Home() { // Changed "home" to "Home"
   return (
     <div>
