@@ -2,25 +2,87 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #f7f7f7;
+  font-family: 'Arial', sans-serif;
+}
+
+.perfume-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: #4A4A4A;
+}
+
+.perfume-description {
+  text-align: center;
+  margin: 10px 20px;
+  font-size: 1.2rem;
+  color: #6b6b6b;
 }
 
 .perfume-content {
   flex-grow: 1;
-  padding: 40px;
-  text-align: center;
-  background-color: #60ccec; /* Light beige background for a luxurious feel */
+  padding: 20px;
 }
 
-.perfume-title {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: blue; /* Rich brown color for an elegant look */
-}
-
-.perfume-description {
-  font-size: 18px;
-  color: #555;
-  max-width: 800px;
+.perfume-table {
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.perfume-table th, .perfume-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.perfume-table th {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.perfume-table td {
+  font-size: 1rem;
+  color: #333;
+}
+
+.perfume-img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.perfume-img:hover {
+  transform: scale(1.1);
+}
+
+.perfume-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.perfume-table tr:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .perfume-table th, .perfume-table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .perfume-img {
+    width: 80px;
+  }
+
+  .perfume-title {
+    font-size: 2rem;
+  }
 }
