@@ -1,21 +1,33 @@
 import React from 'react';
 import { NavBar } from '../components/NavBar';
 import { Footer } from '../components/Footer';
-import'../css/coffeevstea.css'
+import '../css/coffeevstea.css'
+import { TabletProducts } from './TabletProducts';
 
 export default function CoffeeVsTea() {
   return (
     <div className="coffee-vs-tea-page">
       <NavBar />
-      
-      <main className="coffee-vs-tea-content">
-        <h1 className="coffee-vs-tea-title">Engel's Coffee vs. Tea</h1>
-        <p className="coffee-vs-tea-description">
-          Discover the timeless debate between coffee and tea. Which do you prefer: the rich boldness of coffee 
-          or the soothing flavors of tea? Explore our selection and decide for yourself!
-        </p>
-        {/* Additional content comparing coffee and tea can go here */}
-      </main>
+
+      <table>
+        <td>
+          <main className="coffee-vs-tea-content">
+
+            <section id="coffee-vs-tea-title-container">
+              <h1 className="coffee-vs-tea-title">Engel's Coffee vs. Tea</h1>
+            </section>
+
+            <section id="coffee-vs-tea-section">
+              <p className="coffee-vs-tea-description">
+                "We choose the flavor,
+                You choose your taste!"
+              </p>
+            </section>
+          </main>
+        </td>
+        <td><TabletProducts /></td>
+      </table>
+
 
       <Footer />
     </div>
