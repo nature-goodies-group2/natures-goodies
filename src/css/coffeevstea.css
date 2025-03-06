@@ -1,3 +1,4 @@
+
 .coffee-vs-tea-page {
   display: flex;
   flex-direction: column;
@@ -5,22 +6,34 @@
 }
 
 .coffee-vs-tea-content {
-  flex-grow: 1;
-  padding: 40px;
+  flex-grow: 1;  
   text-align: center;
-  background-color: #f1f8e9; /* Light green tea-like background */
+  margin-bottom: 100px;
 }
 
 .coffee-vs-tea-title {
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 20px;
-  color: #6b4f2d; /* Rich brown for coffee theme */
+  padding-top: 40px;
+  color:White;
+  height: 140px;
+  background-color: rgb(59, 58, 58);
+  width: 1000px;
 }
 
 .coffee-vs-tea-description {
-  font-size: 18px;
-  color: #555;
-  max-width: 800px;
-  margin: 0 auto;
+  font-size: 2rem;
+  color:white;
+  font-weight: bolder;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#coffee-vs-tea-section{
+  background-image: url('../img/bg-coffee.jpg');
+  background-repeat: no-repeat;
+  place-self: center;
+  width:1000px;
+  height: 800px;
+  overflow: hidden;
 }
