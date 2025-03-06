@@ -6,6 +6,16 @@
   margin: 20px;
 }
 
+      /* Gallery section to display plant cards */
+  .plants-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    background-image: '../img/spiderPlant.jpg'
+      
+ }
+
 .plants-title {
   text-align: center;
   font-size: 2em;
