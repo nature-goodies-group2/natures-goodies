@@ -11,6 +11,16 @@
   background-color: #e8f5e9; /* Light green background for a natural look */
 }
 
+      /* Gallery section to display plant cards */
+  .plants-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    background-image: '../img/spiderPlant.jpg'
+      
+ }
+
 .plants-title {
   font-size: 36px;
   font-weight: bold;
