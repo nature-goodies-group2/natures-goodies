@@ -9,6 +9,7 @@ import AboutUs from '../AboutUs';
 import ContactUs from '../ContactUs';
 import Register from '../Register';  // New import
 import Login from '../Login';        // New import
+import CheckOut from '../CheckOut';
 
 
 export default function RoutersLink() {
@@ -25,6 +26,7 @@ export default function RoutersLink() {
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/register" element={<Register />} />  {/* New route */}
         <Route path="/login" element={<Login />} />        {/* New route */}
+        <Route path="/checkout" element={<CheckOut />} /> 
       </Routes>
     </div>
   );

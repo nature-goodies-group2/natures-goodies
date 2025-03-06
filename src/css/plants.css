@@ -1,26 +1,70 @@
 .plants-page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
 .plants-content {
-  flex-grow: 1;
-  padding: 40px;
-  text-align: center;
-  background-color: #e8f5e9; /* Light green background for a natural look */
+  margin: 20px;
 }
 
 .plants-title {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #388e3c; /* Green color for plant theme */
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
 .plants-description {
-  font-size: 18px;
-  color: #555;
-  max-width: 800px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.plants-table {
+  width: 80%;
+  border-collapse: collapse;
   margin: 0 auto;
+  text-align: center;
+}
+
+.plants-table th, .plants-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.plants-table th {
+  background-color: #f4f4f4;
+  font-size: 1em;
+}
+
+.plants-table td img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.plants-table td {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.plants-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.plants-table tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.plants-table td:last-child {
+  font-weight: bold;
+  color: #2d6a4f;
+}
+
+@media (max-width: 768px) {
+  .plants-table {
+    font-size: 0.9em;
+  }
+
+  .plants-table td img {
+    max-width: 100px;
+  }
 }

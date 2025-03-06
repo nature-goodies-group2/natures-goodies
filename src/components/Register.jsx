@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import '../css/register.css'; // Import your CSS
 
 export default function Register() {
   const [username, setUsername] = useState('');
@@ -9,13 +10,14 @@ export default function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     console.log('Registering', { username, email, password });
     navigate('/login'); // Redirect to login after successful registration
   };
 
   return (
     <div className="register-container">
+      <h1>Nature's Goodies🌱</h1><br />
       <h2>Create an Account</h2>
       <form onSubmit={handleSubmit}>
         <div>

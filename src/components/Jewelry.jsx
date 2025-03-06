@@ -1,20 +1,72 @@
-import React from 'react';
+import React, { useState } from "react";
 import { NavBar } from '../components/NavBar';
 import { Footer } from '../components/Footer';
-import '../css/jewerly.css'
-
+import goldNecklace from '../img/gold-necklace.png';
+import diamondEarrings from '../img/diamond-earrings.png';
+import silverBracelet from '../img/silver-bracelet.png';
+import pearlRing from '../img/pearl-ring.png';
+import '../css/jewelry.css';
 
 export default function Jewelry() {
+  // Sample jewelry items (this can be replaced with API data)
+  const [jewelryItems] = useState([
+    { id: 1, name: "Gold Necklace", price: 120, image: goldNecklace },
+    { id: 2, name: "Diamond Earrings", price: 250, image: diamondEarrings },
+    { id: 3, name: "Silver Bracelet", price: 90, image: silverBracelet },
+    { id: 4, name: "Pearl Ring", price: 180, image: pearlRing },
+  ]);
+
+  // Shopping Cart State
+  const [cart, setCart] = useState([]);
+
+  // Function to add items to the cart
+  const addToCart = (item) => {
+    setCart([...cart, item]);
+  };
+
+  // Calculate the total price of the items in the cart
+  const totalPrice = cart.reduce((total, item) => total + item.price, 0);
+
   return (
     <div className="jewelry-page">
-      <NavBar />      
+      <NavBar />
       <main className="jewelry-content">
         <h1 className="jewelry-title">Abigail's Jewelry</h1>
         <p className="jewelry-description">
           Discover our beautiful collection of fine jewelry crafted with precision and love.
           Find the perfect piece to express your style and elegance.
         </p>
-        {/* Add more content here as needed */}
+
+        {/* Jewelry Items List */}
+        <div className="jewelry-grid">
+          {jewelryItems.map((item) => (
+            <div key={item.id} className="jewelry-item">
+              <img src={item.image} alt={item.name} className="jewelry-image" />
+              <h3>{item.name}</h3>
+              <p>${item.price}</p>
+              <button onClick={() => addToCart(item)} className="add-to-cart">
+                Add to Cart
+              </button>
+            </div>
+          ))}
+          <button>Checkout</button>
+        </div>
+
+        {/* Shopping Cart Section */}
+        <div className="shopping-cart">
+          <h2>Shopping Cart</h2>
+          {cart.length === 0 ? (
+            <p>Your cart is empty.</p>
+          ) : (
+            <ul>
+              {cart.map((item, index) => (
+                <li key={index}>{item.name} - ${item.price}</li>
+              ))}
+              <hr />
+              <li><strong>Total: ${totalPrice}</strong></li>
+            </ul>
+          )}
+        </div>
       </main>
       <Footer />
     </div>
