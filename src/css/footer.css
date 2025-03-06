@@ -32,3 +32,17 @@
 .footer-links a:hover {
   text-decoration: underline;
 }
+i added this so the footer is always on the bottom of the page, this will allow for additional content
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex: 1; /* Takes up all available space */
+}
+
+footer {
+  margin-top: auto; /* Pushes footer to the bottom */
+}
